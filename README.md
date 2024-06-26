@@ -52,24 +52,43 @@ program
 `add_node`
 - Обертка над функцией **add_node0**, сделанная для удобства.
 ### compress.c
-``
-``
-``
-``
-``
-``
-``
-``
-``
-``
-### queue.c
-``
-``
-``
-``
-``
-``
-### tree_node.c
-``
+`encoding`
+- Построение дерева из корня `root`, на основе кодов `huffmanCode`. Рекурсивная функция, использующая `str` для построения кода.
+- @param root[in]: корень дерева, в которое строим коды.
+ * @param str[in]: текущий код при рекурсивном вызове.
+ * @param huffmanCode[in]: таблица кодов Хаффмана.
+`decoding`
 
-``
+`byte_code`
+
+`getBit`
+
+`add_node_decompressing`
+
+`build_tree_from_codes`
+
+`create_huff_tree`
+
+`binToDec`
+
+`file_parsing`
+
+`huff_decompressing`
+
+### queue.c
+`deallocating_the_queue`
+
+`realloc_the_memory`
+
+`heapify`
+
+`build_the_queue`
+
+`deleting_a_root`
+
+`Insert`
+
+### tree_node.c
+`swap_elements`
+
+`build_the_node`
