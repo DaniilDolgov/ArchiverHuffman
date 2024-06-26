@@ -53,42 +53,60 @@ program
 - Обертка над функцией **add_node0**, сделанная для удобства.
 ### compress.c
 `encoding`
-- Построение дерева из корня **root**, на основе кодов **huffmanCode**. Рекурсивная функция, использующая **string** для построения кода.
-- param root[in]: корень дерева, в которое строим коды.
- * @param str[in]: текущий код при рекурсивном вызове.
- * @param huffmanCode[in]: таблица кодов Хаффмана.
+- Построение дерева из корня **root**, на основе кодов **huff_code**. Рекурсивная функция, использующая **string** для построения кода.
+- root: корень дерева, в которое строим коды.
+- string: текущий код при рекурсивном вызове.
+- huff_code: таблица кодов Хаффмана.
+
 `decoding`
+- Декодирование символа и запись его в файл **file**. Файловый дескриптор **file** должен быть открыт при передачи в функцию, иначе будет ошибка.
+- **root** - корень дерева, где мы ищем код, расположенный в строке **string** по индексу **id**.
+- root: корень дерева, в которое строим коды.
+- string: текущий код при рекурсивном вызове.
 
 `byte_code`
 
+
 `getBit`
+
 
 `add_node_decompressing`
 
+
 `build_tree_from_codes`
+
 
 `create_huff_tree`
 
+
 `binToDec`
 
+
 `file_parsing`
+
 
 `huff_decompressing`
 
 ### queue.c
 `deallocating_the_queue`
 
+
 `realloc_the_memory`
+
 
 `heapify`
 
+
 `build_the_queue`
 
+
 `deleting_a_root`
+
 
 `Insert`
 
 ### tree_node.c
 `swap_elements`
+
 
 `build_the_node`
